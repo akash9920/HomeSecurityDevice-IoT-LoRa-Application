@@ -1,0 +1,17 @@
+to install AWS cli
+
+link: https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html#awscli-install-linux-path
+
+AWS IoT
+
+https://iotbytes.wordpress.com/aws-iot-cli-on-raspberry-pi/
+
+repo aws https://github.com/awslabs/aws-shell
+
+
+Pushing the image to the s3 bucket
+
+aws s3 cp ./Pictures/SafeDoor/test.jpg s3://captureimage
+
+
+call the reckognition API and then call remove image command
