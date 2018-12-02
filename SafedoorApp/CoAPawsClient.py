@@ -149,8 +149,6 @@ class CoAPawsClient:
         self.client.stop()
         
     def runTest(self,data):
-        
-	#data = "Jhanvi Preashan shalalalal"
         payload = data 
         
         
