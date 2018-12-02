@@ -15,3 +15,7 @@ aws s3 cp ./Pictures/SafeDoor/test.jpg s3://captureimage
 
 
 call the reckognition API and then call remove image command
+
+https://qiita.com/alokrawat050/items/56820afdb6968deec6a2
+
+
