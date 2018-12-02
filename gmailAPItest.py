@@ -24,6 +24,7 @@ part.set_payload((attachment).read())
 encoders.encode_base64(part)
 part.add_header('Content-Disposition',"attachment; filename= "+filename)
 
+msg.attach(part)
 
 msgPayload = msg.as_string()
 server = smtplib.SMTP('smtp.gmail.com',587)
