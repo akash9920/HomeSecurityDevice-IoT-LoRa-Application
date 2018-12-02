@@ -82,14 +82,14 @@ client.connect("iot.eclipse.org", 1883, 60)
 
 
 
-def Call_AWS(i):
+def Call_AWS():
 
     if __name__ == "__main__":
 
         bucket='safedoor'
-        sourceFile= str(i)+'.jpg'
+        sourceFile= 'authUser.jpg'
 
-        targetFile='2.jpg'
+        targetFile='image.jpg'
 
 
     client=boto3.client('rekognition','us-east-1')
@@ -137,10 +137,8 @@ def Call_AWS(i):
 
 
 def callingAPI():
-    for i in range(1,4):
-        Call_AWS(i)
-        
-        awsPayload = Call_AWS(i)
+        Call_AWS()
+        awsPayload = Call_AWS()
 	print(awsPayload)       
         if awsPayload != 0:
 		print ("A match is found")
@@ -162,17 +160,17 @@ def callingAPI():
             
            
 
-ak = False
-while True:
-    if ak == True:
-        callingAPI()
+# ak = False
+# while True:
+#     if ak == True:
+#         callingAPI()
         
-        ak = False
+#         ak = False
     
-    elif ak == False:
-        print "Sensor is off"
-        sleep(10)
-        ak =True
+#     elif ak == False:
+#         print "Sensor is off"
+#         sleep(10)
+#         ak =True
         
    
 
