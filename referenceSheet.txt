@@ -18,4 +18,40 @@ call the reckognition API and then call remove image command
 
 https://qiita.com/alokrawat050/items/56820afdb6968deec6a2
 
+Rpi Camera:
 
+raspistill -o image.jpg
+
+
+
+
+if  error so installed the other things
+
+sudo apt-get purge openjdk-8-jre-headless
+sudo apt-get install openjdk-8-jre-headless
+sudo apt-get install openjdk-8-jre
+
+
+
+sdk and librairies:
+https://picamera.readthedocs.io/en/release-1.13/recipes1.html
+
+
+
+
+
+
+Google API installation guide
+
+
+
+#stepsInvolved
+#enableGoogleGMAILapi
+
+#run coomand : pip install --upgrade google-api-python-client oauth2client
+# error faced , I wasnt using sudo which led to  lib issue
+
+
+what it is ?
+read about this stuff
+base64url string
