@@ -16,6 +16,15 @@ body = 'This is the sample message to test the api'
 
 msg.attach(MIMEText(body,'plain'))
 
+filename='image.jpg'
+attachment  =open(filename,'rb')
+
+part = MIMEBase('application','octet-stream')
+part.set_payload((attachment).read())
+encoders.encode_base64(part)
+part.add_header('Content-Disposition',"attachment; filename= "+filename)
+
+
 msgPayload = msg.as_string()
 server = smtplib.SMTP('smtp.gmail.com',587)
 server.starttls()
