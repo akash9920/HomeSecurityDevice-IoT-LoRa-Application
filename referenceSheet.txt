@@ -55,3 +55,14 @@ Google API installation guide
 what it is ?
 read about this stuff
 base64url string
+
+
+to see the hidden files and folders, just type ls -al
+
+
+
+// for aws cli installation i am adding  the path variable
+
+to the .profile file
+export PATH=~/.local/bin:$PATH
+
