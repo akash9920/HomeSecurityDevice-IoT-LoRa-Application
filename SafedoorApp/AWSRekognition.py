@@ -148,7 +148,7 @@ def callingAPI():
 		
 
     	        coapCLient.runTest(newJsonAWSpayload)
-                break
+                
         else:
 		print("NO Match Found")
                # coapCLient = CoAPawsClient("localhost", 5683, "SafeDoor")
