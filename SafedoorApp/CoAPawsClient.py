@@ -111,6 +111,7 @@ class CoAPawsClient:
             print ("This is printing of response")
             print(response.pretty_print())
             print (response)
+            self.client.stop()
             
 
         else:
