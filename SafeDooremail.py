@@ -12,7 +12,7 @@ msg['From'] = user.user_email
 msg['To'] = user.sender_email
 msg['Subject'] = subject
 
-body = 'This is the sample message to test the api'
+body = 'The details of the follwoing person is given along with the captured image'
 
 msg.attach(MIMEText(body,'plain'))
 

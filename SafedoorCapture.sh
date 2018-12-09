@@ -37,7 +37,7 @@ fi
 
 rm image.jpg
 rm "image_$getDate.jpg"
-aws s3 rm "image.jpg" s3://safedoor
+aws s3 rm s3://safedoor/image.jpg
 
 
 
