@@ -2,14 +2,14 @@
 
 python SafeDoorCam.py
 
+aws s3 cp "image.jpg" s3://safedoor
+
 getDate=$(date "+%d-%b-%Y@%H:%M:%S")
 
 cp image.jpg "image_$getDate.jpg" 
 
 aws s3 cp "image_$getDate.jpg" s3://safedooruserhistory
 
-rm image.jpg
-rm "image_$getDate.jpg"
 
 if [ $? -eq 0 ]; then
   echo Image captured and being pushed to the cloud
@@ -34,6 +34,10 @@ if [ $? -eq 0 ]; then
 else
   echo Failed to notify the user
 fi
+
+rm image.jpg
+rm "image_$getDate.jpg"
+aws s3 rm "image.jpg" s3://safedoor
 
 
 

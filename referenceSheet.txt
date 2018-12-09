@@ -80,3 +80,13 @@ install CoApthon
 
 install Paho Mqtt 
 
+
+run cam.py
+
+send SafeDoor email
+
+client--- >> mqtt.py is working for mqtt client
+
+server -- > CoAPawsServer
+
+client publisher----> AWS reckognition
