@@ -66,3 +66,17 @@ to see the hidden files and folders, just type ls -al
 to the .profile file
 export PATH=~/.local/bin:$PATH
 
+ref: https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html
+
+
+These things are needed to be 
+
+install aws cli
+
+install boto3
+pip install boto3
+
+install CoApthon
+
+install Paho Mqtt 
+
