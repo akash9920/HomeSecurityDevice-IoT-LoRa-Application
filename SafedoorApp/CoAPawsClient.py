@@ -155,8 +155,8 @@ class CoAPawsClient:
         print ("=========handling post============")
         self.handlePostTest(self.path, payload)  
          
-        print ("============handling get================")
-        self.handleGetTest(self.path)
+      #  print ("============handling get================")
+       # self.handleGetTest(self.path)
     
 '''    
 def main():
