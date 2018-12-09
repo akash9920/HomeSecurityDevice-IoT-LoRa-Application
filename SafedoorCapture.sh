@@ -11,7 +11,7 @@ aws s3 cp "image_$getDate.jpg" s3://safedooruserhistory
 rm image.jpg
 rm "image_$getDate.jpg"
 
-if [ $RESULT -eq 0 ]; then
+if [ $? -eq 0 ]; then
   echo Image captured and being pushed to the cloud
 else
   echo Failed to capture the image, Please check the device
@@ -20,7 +20,7 @@ fi
 
 python ./SafedoorApp/AWSRekognition.py
 
-if [ $RESULT -eq 0 ]; then
+if [ $? -eq 0 ]; then
   echo Analyzing image using AWS rekognition
 else
   echo Failed to perform Image Analysis on AWS server
@@ -29,7 +29,7 @@ fi
 
 python SafeDooremail.py
 
-if [ $RESULT -eq 0 ]; then
+if [ $? -eq 0 ]; then
   echo Notifying the authorized user
 else
   echo Failed to notify the user
