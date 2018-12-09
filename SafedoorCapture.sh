@@ -37,6 +37,3 @@ fi
 
 
 
-aws s3 cp ./Pictures/SafeDoor/test.jpg s3://safedooruserhistory
-
-
