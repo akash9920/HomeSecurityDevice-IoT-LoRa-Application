@@ -13,7 +13,6 @@ fi
 
 
 
-<<<<<<< HEAD
 python ./SafedoorApp/mqtt.py
 
 if [ $RESULT -eq 0 ]; then
@@ -46,7 +45,3 @@ else
 	echo "Error in creation of stack"
 	echo $createOutput
 fi;
-=======
-
-
->>>>>>> 7e1b89f88323029b604eae1167815591e52d3ce2
