@@ -21,7 +21,7 @@ camera.start_preview()
 camera.capture('image.jpg')
 camera.stop_preview()
 
-sense.load_image(./authUser.jpg)
+sense.load_image("home/pi/SafeDoor-IoT-LoRa-Application/authUser.jpg")
 
 sleep(2)
 sense.clear((r2, g2, b2))
