@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 python SafeDoorCam.py
 
 aws s3 cp "image.jpg" s3://safedoor
@@ -21,7 +22,7 @@ fi
 python ./SafedoorApp/AWSRekognition.py
 
 if [ $? -eq 0 ]; then
-  echo Analyzing image using AWS rekognition
+  echo Image Analysis Done
 else
   echo Failed to perform Image Analysis on AWS server
 fi
