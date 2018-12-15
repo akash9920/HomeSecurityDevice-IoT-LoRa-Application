@@ -21,7 +21,7 @@ camera.start_preview()
 camera.capture('image.jpg')
 camera.stop_preview()
 
-sense.load_image(./suthUser.jpg)
+sense.load_image(./authUser.jpg)
 
 sleep(2)
 sense.clear((r2, g2, b2))
