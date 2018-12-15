@@ -1,5 +1,7 @@
 from picamera import PiCamera
 from time import sleep
+from sense_hat import SenseHat
+
 
 sense = SenseHat()
 camera = PiCamera()
