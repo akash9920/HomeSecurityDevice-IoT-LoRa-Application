@@ -17,8 +17,11 @@ b2 = 0
 
 sense.clear((r1, g1, b1))
 camera.start_preview()
-
-sleep(1)
+#sleep(.5)
 camera.capture('image.jpg')
 camera.stop_preview()
+
+sense.load_image(./suthUser.jpg)
+
+sleep(2)
 sense.clear((r2, g2, b2))
