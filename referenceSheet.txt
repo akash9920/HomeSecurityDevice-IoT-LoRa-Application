@@ -13,6 +13,11 @@ Pushing the image to the s3 bucket
 
 aws s3 cp ./Pictures/SafeDoor/test.jpg s3://captureimage
 
+to delete everything from the s3 bucket
+
+aws s3 rm --recursive s3://your_bucket_name
+
+
 
 call the reckognition API and then call remove image command
 
