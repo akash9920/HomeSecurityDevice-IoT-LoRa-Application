@@ -1,4 +1,4 @@
-from sense_hat import SenseHat
+import time
 
 from sense_hat import SenseHat
 
@@ -22,10 +22,26 @@ from sense_hat import SenseHat
 
 # sense.clear()
 
+msleep = lambda x: time.sleep(x / 1000.0)
+
 sense = SenseHat()
 
-r = 255
-g = 255
-b = 255
+r1 = 255
+g1 = 255
+b1 = 255
 
-sense.clear((r, g, b))
+r2 = 0
+g2 = 0
+b2 = 0
+sense.clear((r1, g1, b1))
+
+#msleep(10)
+
+time.sleep(2)
+sense.clear((r2, g2, b2))
+
+
+
+
+
+
